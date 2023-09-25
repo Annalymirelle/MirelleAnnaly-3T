@@ -37,14 +37,19 @@
 
      const listaDeTeclas = document.querySelectorAll('.tecla');
 
-     listaDeTeclas[0].onclick = tocaSomPom;
-     listaDeTeclas[1].onclick = tocaSomClap;
-     listaDeTeclas[2].onclick = tocaSomTim;
+     let contador = 0;
+    
+     // Estrutura de Repetição -  Enquanto 
+     while (contador < listaDeTeclas.length) {
+     listaDeTeclas[contador].onclick = tocaSomPom;
+     
+     contador = contador + 1;  
 
-     listaDeTeclas[3].onclick = tocaSomPuff;
-     listaDeTeclas[4].onclick = tocaSomSplash;
-     listaDeTeclas[5].onclick = tocaSomToim;
+     console.log(contador);
+     }
 
-     listaDeTeclas[6].onclick = tocaSomPsh;
-     listaDeTeclas[7].onclick = tocaSomTic;
-     listaDeTeclas[8].onclick = tocaSomTom;
+
+    
+
+     
+
